@@ -1,0 +1,82 @@
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    height: 100px;
+    width: 100%;
+    background-color: #ededed;
+}
+
+#navoptBox {
+    font-family: "DM Serif Text", serif;
+    display: flex;
+    font-size: 25px;
+    /* margin-right: 2em; */
+    justify-content: space-around;
+    width: 50%;
+}
+
+h1 {
+    margin-left: 2em;
+    font-size: 50px;
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+}
+
+.maincon {
+    height: 400px;
+    width: 70%;
+    margin: auto;
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#dp {
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    background-color: #d9d9d9;
+}
+
+#hd1 {
+    width: 60%;
+    height: 70%;
+    background-color: white;
+    font-family: "DM Serif Text", serif;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#i1 {
+    color: #6500A3;
+}
+
+#i2 {
+    color: #009B10;
+}
+
+.con_icons {
+    position: relative;
+    top: 40px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 250px;
+}
+
+.con_icons i {
+    font-size: 30px;
+    color: #aeaeae;
+}
+
+.con_icons i:hover {
+    color: black;
+}
