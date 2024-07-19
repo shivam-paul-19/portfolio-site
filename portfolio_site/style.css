@@ -9,6 +9,23 @@
     background-color: #DAFFED;
 }
 
+@media (max-width: 954px) {
+    .nav {
+        height: 140px;
+    }
+}
+
+@media (max-width: 670px) {
+    #navoptBox .navopt{
+        display: none;
+    }
+
+    .nav {
+        justify-content: center;
+        height: 100px;
+    }
+}
+
 #name:hover {
     cursor: pointer;
 }
@@ -17,6 +34,7 @@
     transition: cubic-bezier();
     transition-duration: 0.3s;
     padding: 0 10px 0;
+    margin: 0 10px 0;
     border-radius: 0.5em;
 }
 
@@ -30,13 +48,13 @@
 #navoptBox {
     font-family: "DM Serif Text", serif;
     display: flex;
-    font-size: 25px;
+    font-size: 20px;
     justify-content: space-around;
-    width: 50%;
+    /* width: 50%; */
 }
 
 #name {
-    margin-left: 2em;
+    color: black;
     font-size: 50px;
     font-family: "DM Serif Display", serif;
     font-weight: 400;
@@ -129,7 +147,7 @@
     padding: 20px 0 20px;
 }
 
-.skill-box h1 {
+h1 {
     font-size: 50px;
     font-family: "DM Serif Display", serif;
     font-weight: 400;
@@ -192,4 +210,94 @@ ul {
     list-style-type: none;
     font-family: "poppins", sans-serif;
     font-size: 30px;
+}
+
+.edu-sec, .cert-sec {
+    padding: 20px 0 20px;
+}
+
+.edu-card, .cert-card {
+    background-color: #DAFFED;
+    border-radius: 20px;
+    margin: 20px 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    transition: cubic-bezier();
+    transition-duration: 0.3s;
+}
+
+.edu-date, .edu-des {
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.edu-date {
+    width: 20%;
+    font-family: "DM Serif Text", serif;
+    font-size: 25px;
+}
+
+.edu-des {
+    width: 60%;
+}
+
+.edu-title {
+    font-family: "poppins", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.edu-grade {
+    font-family: "poppins", sans-serif;
+    font-style: italic;
+}
+
+.projects {
+    background-color: #DAFFED;
+    padding: 20px;
+}
+
+.proj-card {
+    background-color: white;
+    height: 300px;
+    width: 200px;
+    border-radius: 20px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    margin: 30px 20px;
+    transition: cubic-bezier();
+    transition-duration: 0.3s;
+}
+
+.proj-title {
+    font-size: 30px;
+    text-align: center;
+    font-family: "DM Serif Text", serif;
+}
+
+.proj-des {
+    font-size: 20px;
+    font-family: "poppins", sans-serif;
+    text-align: center;
+}
+
+.cert-title {
+    font-size: 30px;
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+}
+
+.cert-des {
+    width: 70%;
+}
+
+.edu-card:hover, .cert-card:hover, .proj-card:hover {
+    transform: scale(1.1);
 }
