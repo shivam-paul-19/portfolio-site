@@ -1,4 +1,3 @@
-# web_projects
-This is my repository consisting of all projects related to web development 
+# Portfolio Website
 
-This is basically to test me first change/commit
+This is my protfolio conataining all the information about me, made with HTML, css and javascript
