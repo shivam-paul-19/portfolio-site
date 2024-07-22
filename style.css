@@ -456,11 +456,11 @@ footer {
     background-color: #263D42;
 }
 
-.modal-header, .modal-body {
+.modal-header-dark, .modal-body-dark {
     background-color: black;
 }
 
-.btn-close {
+.btn-close-dark {
     background-color: white;
 }
 

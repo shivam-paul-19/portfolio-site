@@ -153,6 +153,10 @@ function dark() {
 
     document.querySelector("footer").classList.add("footer-dark");
     document.querySelector(".cont-sec").classList.add("con-dark");
+
+    document.querySelector(".modal-header").classList.add("modal-header-dark");
+    document.querySelector(".modal-body").classList.add("modal-body-dark");
+    document.querySelector(".btn-close").classList.add("btn-close-dark");
 }
 
 function light() {
@@ -193,4 +197,8 @@ function light() {
 
     document.querySelector("footer").classList.remove("footer-dark");
     document.querySelector(".cont-sec").classList.remove("con-dark");
+
+    document.querySelector(".modal-header").classList.remove("modal-header-dark");
+    document.querySelector(".modal-body").classList.remove("modal-body-dark");
+    document.querySelector(".btn-close").classList.remove("btn-close-dark");
 }
