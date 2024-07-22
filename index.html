@@ -15,21 +15,24 @@
 </head>
 <body>
     <div class="nav">
-        <h1 id="name">Shivam Paul</h1>
-        <div id="navoptBox">
-            <div class="navopt">Home</div>
-            <div class="navopt">Skills</div>
-            <div class="navopt">Education</div>
-            <div class="navopt">Projects</div>
-            <div class="navopt">Certificates</div>
-            <div class="navopt">Contact</div>
+        <h1 class="nav-h">Shivam Paul</h1>
+        <div id="navoptBox-outer">
+            <div id="navoptBox">
+                <div class="navopt navopt-active" id="home">Home</div>
+                <div class="navopt" id="skill">Skills</div>
+                <div class="navopt" id="edu">Education</div>
+                <div class="navopt" id="project">Projects</div>
+                <div class="navopt" id="cert">Certificates</div>
+                <div class="navopt" id="con">Contact</div>
+            </div>
+            <i id="mode" class="fa-regular fa-sun"></i>
         </div>
     </div>
     <div class="maincon container-md">
         <div id="dp"></div>
-        <div id="hd1">
-            <div>Hi, I'm <i id="i1">Shivam Paul</i> <br> and I'm a passionate <br> <i id="i2">Coder</i>.</div>
-            <div class="about"><h2>About</h2><p id="about">A tech enthusiast, presently exploring 
+        <div class ="hd1">
+            <div>Hi, I'm <i class="i1">Shivam Paul</i> <br> and I'm a passionate <br> <i class="i2">Coder</i>.</div>
+            <div class="about"><h2 class="about-h">About</h2><p id="about">A tech enthusiast, presently exploring 
                 the field of development and 
                 sharpening the coding skills in
                 languages like Java, Python, C++ and
@@ -44,7 +47,7 @@
         <a href="https://www.linkedin.com/in/shivam-paul-545790281" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
     </div>
     <br><br>
-    <div class="skill-box">
+    <div class="skill-box light-box">
         <div class="skill-sec container-md">
             <h1>Skills</h1>
             <div id="skill-tab">
@@ -90,13 +93,13 @@
             </div>
         </div>
     </div>
-    <div class="projects">
+    <div class="projects light-box">
         <div class="proj-sec container-md">
             <h1>Projects</h1>
             <div class="proj-card">
                 <div class="proj-title">Portfolio Website</div>
                 <div class="proj-des">Made using HTML, CSS and JavaScript</div>
-                <a href="index.html"> <button class="btn btn-dark">Website link</button> </a>
+                <!-- <a href="index.html"> <button class="btn btn-dark">Website link</button> </a> -->
                 <a href="https://github.com/shivam-paul-19/portfolio-site.git" target="_blank"> <button class="btn btn-outline-dark">Github link</button> </a>
             </div>
         </div>
@@ -111,6 +114,9 @@
                     <div class="edu-title">Certificate of completion: Data structures and algorithms in Java</div>
                     <div class="edu-grade">Issued in: April 2024</div>
                 </div>
+                <div class="cert-view">
+                    <button type="button" class="btn btn-dark" id="apnclg" data-bs-toggle="modal" data-bs-target="#exampleModal">View Certificate</button>
+                </div>
             </div>
             <div class="cert-card">
                 <div class="edu-img"><img src="./assets/google-cloud-icon-1024x823-wiwlyizc.png" alt="" height="120px"></div>
@@ -118,6 +124,9 @@
                     <div class="cert-title">Google cloud skill boost</div>
                     <div class="edu-title">Badge of completion: Introduction to generative AI</div>
                     <div class="edu-grade">Issued in: January 2024</div>
+                </div>
+                <div class="cert-view">
+                    <a href="https://www.cloudskillsboost.google/public_profiles/f8ab524a-62f2-4694-8f86-9ea8e4615d0f/badges/7870570?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share" target="_blank"><button type="button" class="btn btn-dark">View Badge</button></a>
                 </div>
             </div>
             <div class="cert-card">
@@ -127,6 +136,9 @@
                     <div class="edu-title">Introduction to Data science and Machine learning</div>
                     <div class="edu-grade">Issued in: February 2024</div>
                 </div>
+                <div class="cert-view">
+                    <button type="button" class="btn btn-dark" id="vips" data-bs-toggle="modal" data-bs-target="#exampleModal">View Certificate</button>
+                </div>
             </div>
             <div class="cert-card">
                 <div class="edu-img"><img src="./assets/guvi.jpeg" alt="" height="120px"></div>
@@ -135,9 +147,40 @@
                     <div class="edu-title">Python IIT course</div>
                     <div class="edu-grade">Issued in: August 2023</div>
                 </div>
+                <div class="cert-view">
+                    <button type="button" class="btn btn-dark" id="iit" data-bs-toggle="modal" data-bs-target="#exampleModal">View Certificate</button>
+                </div>
             </div>
         </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Certificate</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img id="cert-image" src="./assets/devBaseCert.jpg" alt="" height="330px">
+                </div>
+              </div>
+            </div>
+          </div>
     </div>
+    <div class="cont light-box">
+        <div class="cont-sec container-md">
+            <h1>Contact</h1>
+            <div class="cont-el"><i class="fa-regular fa-envelope"></i><a href="mailto: shivampaul2319@gmail.com" target="_blank">shivampaul2319@gmail.com</a></div>
+            <div class="cont-el"><i class="fa-solid fa-phone"></i>+91 9773903130</div>
+            <div class="cont-el"><i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/shivam-paul-545790281" target="_blank">Linked In</a></div>
+            <div class="cont-el"><i class="fa-brands fa-github"></i><a href="https://github.com/shivam-paul-19" target="_blank">Github</a></div>
+            <div class="cont-el"><i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/shivampaul_2319/" target="_blank">Instagram</a></div>
+            <div class="cont-el"><i class="fa-brands fa-x-twitter"></i><a href="https://x.com/shivampaul_?t=OGfVYuUQBvkDukuaVsuP0Q&s=09" target="_blank">Twitter</a></div>
+        </div>
+    </div>
+    <footer>
+        Shivam Paul &copy; 2024.
+    </footer>
     <script src="port.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
