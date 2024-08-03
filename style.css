@@ -324,9 +324,10 @@ ul {
     transition-duration: 0.3s;
 }
 
-.proj-card a {
-    margin: 2px 0;
+.project-cards {
+    display: flex;
 }
+
 
 .proj-title {
     font-size: 30px;
@@ -335,7 +336,7 @@ ul {
 }
 
 .proj-des {
-    font-size: 20px;
+    font-size: 18px;
     font-family: "poppins", sans-serif;
     text-align: center;
 }

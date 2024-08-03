@@ -145,7 +145,7 @@ function dark() {
         card.classList.add("dark-card");
     }
 
-    let btn = document.querySelectorAll(".btn-dark");
+    let btn = document.querySelectorAll(".cert-view .btn-dark");
     for(btns of btn) {
         btns.classList.remove("btn-dark");
         btns.classList.add("btn-light");
@@ -189,7 +189,7 @@ function light() {
         card.classList.remove("dark-card");
     }
 
-    let btn = document.querySelectorAll(".btn-light");
+    let btn = document.querySelectorAll(".cert-view .btn-light");
     for(btns of btn) {
         btns.classList.add("btn-dark");
         btns.classList.remove("btn-light");
